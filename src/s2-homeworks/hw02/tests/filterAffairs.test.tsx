@@ -1,5 +1,6 @@
 import React from 'react'
 import { AffairType, filterAffairs } from '../HW2'
+import {v1} from "uuid";
 
 let initialState: AffairType[]
 

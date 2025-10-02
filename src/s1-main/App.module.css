@@ -15,6 +15,15 @@
     margin: 0 auto;
 }
 
+.hw_2 {
+    max-width: 1280px;
+    height: 720px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
 .hwTitle {
     height: 27px;
     font-family: 'Montserrat', sans-serif;
