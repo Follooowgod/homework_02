@@ -1,14 +1,28 @@
 .buttonsContainer {
+  display: flex;
+  gap: 16px;
 }
 
 .clock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  width: fit-content;
 }
 
 .watch {
+  font-size: 24px;
+  cursor: default;
 }
 
 .watch strong {
+  font-weight: 700;
 }
 
 .more {
+  font-size: 18px;
+  color: #6b7280;
+  min-height: 24px;
 }
