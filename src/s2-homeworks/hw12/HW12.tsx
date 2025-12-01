@@ -19,11 +19,13 @@ const themes = [
 ]
 
 const HW12 = () => {
-    // взять ид темы из редакса
-    const themeId = 1
 
-    const change = (id: any) => { // дописать функцию
+  const dispatch = useDispatch()
 
+    const themeId = useSelector((state: any) => state.theme.themeId)
+
+    const change = (id: number) => {
+      dispatch(changeThemeId(id))
     }
 
     useEffect(() => {
@@ -36,12 +38,13 @@ const HW12 = () => {
                 Homework #12
             </div>
 
-            <div className={s2.hw}>
+            <div className={s2.hw_6}>
                 <SuperSelect
                     id={'hw12-select-theme'}
                     className={s.select}
-                    // сделать переключение тем
-
+                    options={themes}
+                    value={themeId}
+                    onChangeOption={change}
                 />
             </div>
         </div>
